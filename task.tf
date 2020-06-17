@@ -1,6 +1,7 @@
 provider "aws" {
   region  = "ap-south-1"
-  profile = "task"
+  access_key = "AKIAJ47QOYC4A5WM7X2A"
+  secret_key = "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"
 }
 
 resource "aws_security_group" "sec-grp" {
