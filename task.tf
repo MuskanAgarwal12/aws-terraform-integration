@@ -1,7 +1,6 @@
 provider "aws" {
   region  = "ap-south-1"
-  access_key = "AKIAJ47QOYC4A5WM7X2A"
-  secret_key = "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"
+  profile = "task"
 }
 
 resource "aws_security_group" "sec-grp" {
@@ -133,7 +132,7 @@ resource "aws_s3_bucket" "s3" {
 resource "aws_s3_bucket_object" "s3-object" {
   bucket = aws_s3_bucket.s3.bucket
   key    = "terraform1.png"
-  source = "C://Users/Dell/Desktop/terraform1.png"
+  source = "sudo git clone https://github.com/MuskanAgarwal12/aws.git/terraform1.png"
   acl = "public-read"
 }
 
